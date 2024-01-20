@@ -7,7 +7,7 @@ module Api
       def index
         @posts = Post.all
 
-        render json: @posts
+        render json: @posts, each_serializer: PostSerializer
       end
 
       # GET /posts/1
