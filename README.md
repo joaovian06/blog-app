@@ -10,32 +10,32 @@ Desenvolver a aplicação de um mini-blog, que deve ter três modelos principais
 
     - issue 1: Configurar ambiente de testes local
 
-      - [ ] gems para testes
-      - [ ] config rspec
-      - [ ] config shoulda-matcher
-      - [ ] config guard-rspec
-      - [ ] config factory-bot
-      - [ ] config faker
+      - [x] gems para testes
+      - [x] config rspec
+      - [x] config shoulda-matcher
+      - [x] config guard-rspec
+      - [x] config factory-bot
+      - [x] config faker
 
     - issue 2: Criar modelos base com TDD
 
       - criar modelo Post
 
-        - [ ] gerar scafold para Post
-        - [ ] campos title:string, description:string
-        - [ ] rodar migration
+        - [x] gerar scafold para Post
+        - [x] campos title:string, description:string
+        - [x] rodar migration
 
         - validacoes
-          - [ ] unicidade pelo titulo
-          - [ ] presenca titulo e descricao
-          - [ ] presenca das colunas do db
-          - [ ] validade da factory
-          - [ ] validar testes crud do controller post
+          - [x] unicidade pelo titulo
+          - [x] presenca titulo e descricao
+          - [x] presenca das colunas do db
+          - [x] validade da factory
+          - [x] validar testes crud do controller post
 
       - criar modelo Category
 
-        - [ ] gerar scafold para Category
-        - [ ] campos title:string, description:string
+        - [x] gerar scafold para Category
+        - [x] campos title:string, description:string
         - [ ] rodar migration
 
         - validacoes
