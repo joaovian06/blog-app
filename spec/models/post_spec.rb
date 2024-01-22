@@ -31,7 +31,7 @@ RSpec.describe Post, type: :model do
     context "uniqueness" do
       let(:subject) { build(:post) }
 
-      it { is_expected.to validate_uniqueness_of(:title).scoped_to(:category_id) }
+      it { is_expected.to validate_uniqueness_of(:title).scoped_to(:user_id) }
     end
   end
 

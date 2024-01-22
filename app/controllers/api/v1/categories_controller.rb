@@ -44,7 +44,7 @@ module Api
         # Use callbacks to share common setup or constraints between actions.
         def set_category
           if params[:post_id]
-            @category = Post.find_by(id: params[:post_id]).category
+            @category = Post.find_by(id: params[:post_id])&.category
             return @category
           end
 

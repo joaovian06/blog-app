@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :category do
-    title { %w(food technology music).sample }
+    title { Faker::Hobby.unique.activity }
     description { "Standard category description" }
 
     trait :invalid do
