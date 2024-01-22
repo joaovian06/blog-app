@@ -29,7 +29,13 @@ RSpec.describe Post, type: :model do
     end
 
     context "uniqueness" do
-      it { is_expected.to validate_uniqueness_of(:title) }
+      let(:subject) { build(:post) }
+
+      it { is_expected.to validate_uniqueness_of(:title).scoped_to(:category_id) }
     end
+  end
+
+  describe "associations" do
+    it { is_expected.to belong_to(:category) }
   end
 end 

@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
-    validates :title, presence: true, uniqueness: true
+    validates :title, presence: true, uniqueness: { scope: [:category_id] }
     validates :description, presence: true
+
+    belongs_to :category
 end
