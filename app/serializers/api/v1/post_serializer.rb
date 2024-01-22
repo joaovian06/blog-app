@@ -6,6 +6,10 @@ module Api
       belongs_to :category do
         link(:related) { api_v1_post_category_url(object.id) }
       end
+
+      belongs_to :user do
+        link(:related) { api_v1_post_user_url(object.id) }
+      end
     end
   end
 end
