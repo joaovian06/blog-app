@@ -1,15 +1,11 @@
-  Rails.application.routes.draw do
-    namespace :api do
-      namespace :v1 do
-        resources :categories
+Rails.application.routes.draw do
+  namespace :api do
+    namespace :v1 do
+      resources :categories
 
-        resources :posts do
-          resource :category, only: [:show]
-        end
+      resources :posts do
+        resource :category, only: [:show]
       end
     end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  end
 end
