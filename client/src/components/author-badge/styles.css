@@ -1,0 +1,10 @@
+.author-badge-container {
+  display: flex;
+}
+
+.author-badge-image {
+  width: 3rem;
+  height: 40%;
+  border-radius: 50%;
+  margin-right: 20px;
+}

@@ -1,0 +1,37 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.post-image {
+  width: 42vw;
+  height: 40vh;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.post-title {
+  margin-top: 10px;
+}
+
+.post-container div:nth-child(2) {
+  max-width: 40vw;
+}
+
+.post-date {
+  font: 0.8rem;
+  margin: 10px 0px;
+}
+
+.post-title {
+  font-size: 2rem;
+  /* margin-top: 10px; */
+}
+
+.post-body {
+  margin: 10px 0px 20px 0px;
+  width: 35vw;
+  font-size: 1.2rem;
+}

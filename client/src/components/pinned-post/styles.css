@@ -1,0 +1,31 @@
+.pinned-post-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.pinned-post-image {
+  width: 45vw;
+  height: 40vh;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.pinned-post-container div:nth-child(2) {
+  max-width: 40vw;
+}
+
+.pinned-post-date {
+  font: 0.8rem;
+  margin: 10px 0px;
+}
+
+.pinned-post-title {
+  font-size: 2rem;
+  /* margin-top: 10px; */
+}
+
+.pinned-post-body {
+  margin: 10px 0px 20px 0px;
+  font-size: 1.5rem;
+}

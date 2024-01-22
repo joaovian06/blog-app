@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.nav-link {
+  margin: 0px 10px;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+}
