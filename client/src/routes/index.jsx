@@ -1,6 +1,7 @@
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "../pages/home/";
 import Navbar from "../components/navbar";
+import LoginSignUp from "../components/login-sign-up";
 
 export default function ApplicationRoutes() {
   return (
@@ -8,7 +9,7 @@ export default function ApplicationRoutes() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/posts" element={<h1>posts</h1>} />
+        <Route path="/sign_in" element={<LoginSignUp />} />
       </Routes>
     </BrowserRouter>
   );
