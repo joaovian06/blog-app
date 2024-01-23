@@ -9,4 +9,6 @@ class User < ActiveRecord::Base
   include DeviseTokenAuth::Concerns::User
 
   has_many :posts
+
+  validates :name, presence: true
 end
