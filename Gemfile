@@ -34,10 +34,15 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem "rack-cors"
+gem "rack-cors"
 
 # ActiveModelSerializers brings convention over configuration to your JSON generation.
 gem 'active_model_serializers', '~> 0.10.0'
+
+# User authentication, using token, and internatiolization
+gem "devise"
+gem "devise_token_auth"
+gem "devise-i18n"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

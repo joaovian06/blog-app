@@ -1,6 +1,7 @@
 module Api
   module V1
     class PostsController < ApplicationController
+      before_action :authenticate_user!, except: [:index, :show]
       before_action :set_post, only: %i[ show update destroy ]
 
       # GET /posts
@@ -20,7 +21,7 @@ module Api
         @post = Post.new(post_params)
 
         if @post.save
-          render json: @post, status: :created, location: @post
+          render json: @post, status: :created
         else
           render json: @post.errors, status: :unprocessable_entity
         end
@@ -48,7 +49,7 @@ module Api
 
         # Only allow a list of trusted parameters through.
         def post_params
-          params.require(:post).permit(:title, :description)
+          params.require(:post).permit(:title, :description, :category_id, :user_id)
         end
     end
   end
