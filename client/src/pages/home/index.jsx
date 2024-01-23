@@ -6,7 +6,7 @@ export default function Home() {
   const [posts, setPosts] = useState("");
 
   async function getPosts() {
-    const response = await fetch("http://localhost:3000/api/v1/posts", {
+    const response = await fetch("/api/v1/posts", {
       headers: {
         Accept: "application/json",
       },
