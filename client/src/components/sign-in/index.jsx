@@ -1,12 +1,20 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { useNavigate } from "react-router-dom";
+=======
+>>>>>>> main
 import "../../assets/shared/styles/signInSignUpStyles.css";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+<<<<<<< HEAD
 
   let navigate = useNavigate();
+=======
+  const navigate = useNavigate();
+>>>>>>> main
 
   const onHandleSubmit = async (e) => {
     e.preventDefault();
@@ -24,7 +32,11 @@ const SignIn = () => {
       }),
     }).then((res) => {
       if (res.status === 200) {
+<<<<<<< HEAD
         navigate("/posts");
+=======
+        navigate("/");
+>>>>>>> main
       }
     });
   };

@@ -18,7 +18,6 @@ const SignUp = () => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        Location: "/sign_in",
       },
       mode: "cors",
       body: JSON.stringify({
