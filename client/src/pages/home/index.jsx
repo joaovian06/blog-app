@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PinnedPost from "../../components/pinned-post";
 import PostList from "../../components/post-list";
+import NewPostButton from "../../components/new-post-button";
 
 export default function Home() {
   const [posts, setPosts] = useState("");
@@ -22,7 +23,8 @@ export default function Home() {
 
   return (
     <div>
-      {posts && posts.length > 0 && <PinnedPost post={posts[0]} />}
+      <NewPostButton />
+      {posts && posts.length > 0 && <PinnedPost post={posts[0].attributes} />}
 
       <PostList posts={posts} />
     </div>

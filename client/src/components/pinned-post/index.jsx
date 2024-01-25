@@ -10,7 +10,7 @@ export default function PinnedPost({ post }) {
       <div>
         <h2 className="pinned-post-title">{post.title}</h2>
         <p className="pinned-post-date">{post.date}</p>
-        <p className="pinned-post-body">{post.body}</p>
+        <p className="pinned-post-body">{post.description}</p>
         <AuthorBadge />
       </div>
     </div>

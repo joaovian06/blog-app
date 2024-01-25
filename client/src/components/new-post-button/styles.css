@@ -1,0 +1,11 @@
+.post-button {
+  background-color: green;
+  color: #fff;
+  font-size: 19px;
+  height: 10vh;
+  width: 10vw;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

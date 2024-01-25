@@ -13,7 +13,8 @@ export default function ApplicationRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/sign_up" element={<SignUp />} />
         <Route path="/sign_in" element={<SignIn />} />
-        <Route path="/posts" element={<PostForm />} />
+        <Route path="/posts" element={<Home />} />
+        <Route path="/posts/new" element={<PostForm />} />
       </Routes>
     </BrowserRouter>
   );
