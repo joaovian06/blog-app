@@ -13,14 +13,20 @@ export default function Navbar() {
         <Link className="nav-link" to="/">
           Home
         </Link>
-        <Link className="nav-link" to="/about">
+        {/* <Link className="nav-link" to="/about">
           Sobre
         </Link>
         <Link className="nav-link" to="/contact">
           Contato
-        </Link>
+        </Link> */}
         <Link className="nav-link" to="/posts">
           Posts
+        </Link>
+        <Link className="nav-link login-button" to="/sign_in">
+          Login
+        </Link>
+        <Link className="nav-link sign-up-button" to="/sign_up">
+          Sign Up
         </Link>
       </div>
     </nav>

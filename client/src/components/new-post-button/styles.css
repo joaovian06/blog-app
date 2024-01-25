@@ -1,6 +1,6 @@
 .post-button {
-  background-color: green;
-  color: #fff;
+  border: 1px solid green;
+  /* background-color: green; */
   font-size: 19px;
   height: 10vh;
   width: 10vw;
@@ -8,4 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.post-button a {
+  color: rgb(6, 53, 6);
 }

@@ -9,6 +9,20 @@
   margin: 0px 10px;
 }
 
+.login-button {
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 50px;
+}
+
+.sign-up-button {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: blue;
+  color: #fff;
+}
+
 .navbar a {
   font-size: 1.5rem;
 }
