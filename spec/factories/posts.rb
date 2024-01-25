@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :post do
-    title { Faker::Lorem.word }
+    title { Faker::Lorem.unique.word }
     description { Faker::Lorem.sentence }
     category
     user

@@ -4,4 +4,19 @@ class Post < ApplicationRecord
 
     belongs_to :category
     belongs_to :user
+
+    after_create :stream_post
+
+
+    private
+
+
+        def stream_post
+            message_data = {
+                post_title: self.title,
+            }
+
+
+            ActionCable.server.broadcast "AlertsChannel#{self.user_id}", message_data
+        end
 end
