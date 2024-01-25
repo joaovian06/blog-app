@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Routes from "./routes";
+import getLoggedUserId from "./utils/userUtils";
 import ActionCable from "actioncable";
 
 import "./App.css";
@@ -11,7 +12,7 @@ function App() {
   const [channel, setChannel] = useState(null);
   // create a state to store the actioncable channel
 
-  useEffect(() => {
+  async function alertsChannelUserConnection() {
     if (channel !== null) channel.unsubscribe();
     // destroy possible duplicate connections
 
@@ -19,7 +20,7 @@ function App() {
       cableApp.subscriptions.create(
         {
           channel: "AlertsChannel",
-          user_id: 1,
+          user_id: await getLoggedUserId(),
           // channel that will be used for the connection
         },
         {
@@ -30,6 +31,10 @@ function App() {
         }
       )
     );
+  }
+
+  useEffect(() => {
+    alertsChannelUserConnection();
   }, []);
 
   return (

@@ -4,7 +4,13 @@ module Api
       before_action :set_user, only: [:show]
 
       def index
-        @users = User.all
+        if params[:email]
+          @user = User.find_by(email: params[:email])
+
+          return render json: @user
+        end
+        
+        @users = User.all unless params[:email]
 
         render json: @users
       end

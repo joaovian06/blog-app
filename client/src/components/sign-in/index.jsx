@@ -22,8 +22,16 @@ const SignIn = () => {
         password: password,
       }),
     }).then((res) => {
-      if (res.status === 200) {
+      if (res.ok) {
         navigate("/posts");
+
+        localStorage.setItem("access-token", res.headers.get("access-token"));
+        localStorage.setItem("uid", res.headers.get("uid"));
+        localStorage.setItem("client", res.headers.get("client"));
+
+        return res.json();
+      } else {
+        throw new Error(res);
       }
     });
   };
