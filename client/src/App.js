@@ -25,8 +25,7 @@ function App() {
         {
           received: (message) => {
             // function that will be executed when a message is received
-
-            console.log(message);
+            alert(message.post_title);
           },
         }
       )

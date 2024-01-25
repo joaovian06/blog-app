@@ -13,7 +13,6 @@ class Post < ApplicationRecord
 
         def stream_post
             message_data = {
-                user: self.user,
                 post_title: self.title,
             }
 
