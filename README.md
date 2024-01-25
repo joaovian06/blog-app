@@ -36,20 +36,20 @@ Desenvolver a aplicação de um mini-blog, que deve ter três modelos principais
 
         - [x] gerar scafold para Category
         - [x] campos title:string, description:string
-        - [ ] rodar migration
+        - [x] rodar migration
 
         - validacoes
-          - [ ] unicidade pelo titulo
-          - [ ] presenca titulo e descricao
-          - [ ] presenca das colunas do db
-          - [ ] validade da factory
-          - [ ] validar testes crud do controller category
+          - [x] unicidade pelo titulo
+          - [x] presenca titulo e descricao
+          - [x] presenca das colunas do db
+          - [x] validade da factory
+          - [x] validar testes crud do controller category
 
       - criar modelo User
 
-        - [ ] gerar scafold para User devise
-        - [ ] campos name:string, email:string
-        - [ ] rodar migration
+        - [x] gerar scafold para User devise
+        - [x] campos name:string, email:string
+        - [x] rodar migration
 
   - Milestone 2: Telas
 
