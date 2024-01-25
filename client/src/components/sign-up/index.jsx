@@ -13,7 +13,7 @@ const SignUp = () => {
   const onHandleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch("/auth", {
+    await fetch("/api/v1/auth", {
       method: "POST",
       headers: {
         Accept: "application/json",

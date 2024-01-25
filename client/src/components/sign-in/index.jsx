@@ -10,7 +10,7 @@ const SignIn = () => {
   const onHandleSubmit = async (e) => {
     e.preventDefault();
 
-    await fetch("/auth/sign_in", {
+    await fetch("api/v1/auth/sign_in", {
       method: "POST",
       headers: {
         Accept: "application/json",
