@@ -1,6 +1,5 @@
 # README
 
-Essa aplicação está sendo desenvolvida como desafio técnico para uma vaga de desenvolvedor Ruby on Rails Pleno.
 Desafio:
 Desenvolver a aplicação de um mini-blog, que deve ter três modelos principais: Post, Category e User. Cada novo post deve estar associado a uma categoria e um usuário. Além disso, é fundamental implementar uma funcionalidade de notificação broadcast utilizando o Action Cable. Sempre que um novo post for criado, o usuário correspondente deve receber uma notificação em tempo real. Este teste avaliará suas habilidades em modelagem de dados, programação em Ruby on Rails, e na utilização do Action Cable para comunicação em tempo real.
 
